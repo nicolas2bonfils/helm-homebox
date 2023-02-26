@@ -1,0 +1,12 @@
+apiVersion: v2
+name: homebox
+description: A Helm chart for HomeBox
+type: application
+version: 0.1.0
+appVersion: "v0.8.2"
+maintainers:
+- email: opensource@nicolas2bonfils.com
+  name: nicolas2bonfils
+sources:
+- https://github.com/hay-kot/homebox
+- https://github.com/nicolas2bonfils/helm-homebox
