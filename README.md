@@ -13,5 +13,5 @@ Currently that helm-chart is not (yet) deployed to a helm-registry. So you have 
 ```
 $ git checkout https://github.com/nicolas2bonfils/helm-homebox.git
 $ cd helm-homebox
-$ helm install -n homebox homebox . -f values.yml
+$ helm install -n homebox homebox . -f values.yaml
 ```
