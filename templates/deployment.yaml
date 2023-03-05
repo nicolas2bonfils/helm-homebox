@@ -53,6 +53,8 @@ spec:
               {{- if .Values.persistence.subPath }}
               subPath: {{ .Values.persistence.subPath }}
               {{- end }}
+            - name: tmp
+              mountPath: /tmp
       volumes:
         - name: {{ .Values.persistence.name }}
           {{- if .Values.persistence.enabled }}
@@ -61,6 +63,8 @@ spec:
           {{- else }}
           emptyDir: {}
           {{- end }}
+        - name: tmp
+          emptyDir: {}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
