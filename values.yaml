@@ -28,6 +28,7 @@ persistence:
   # subPath: "" # only mount a subpath of the Volume into the pod
 
 serviceAccount:
+  enable: false
   # Specifies whether a service account should be created
   create: false
   # Annotations to add to the service account
